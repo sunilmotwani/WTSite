@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Image Gallery</title>
+<script type = "text/javascript">
+var i
+i = 1
+function showPrev(){
+--i
+if(i == 0)
+	i = 1
+document.theImg.src = "images/butterfly" + i + ".jpg"
+}
+
+function showNext(){
+++i
+if(i == 9)
+	i = 8
+document.theImg.src = "images/butterfly" + i + ".jpg"
+}
+</script>
+</head>
+<body>
+<table align = center width = 400>
+<tr>
+	<td colspan = 2 align = center height = 300><img src = "images/butterfly1.jpg" name = theImg></td>
+</tr>
+<tr>
+<td><img src = "images/prev.jpg" onclick = "showPrev()"></td>
+<td><img src = "images/next.jpg" onclick = "showNext()" align = right></td>
+</tr>
+</table>
+<hr>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Image Gallery&lt;/title&gt;<br>
+  &lt;script type = &quot;text/javascript&quot;&gt;<br>
+  var i<br>
+  i = 1<br>
+  function showPrev(){<br>
+  --i<br>
+  if(i == 0)<br>
+i = 1<br>
+document.theImg.src = &quot;images/butterfly&quot; + i + &quot;.jpg&quot;<br>
+}</p>
+<p>function showNext(){<br>
+  ++i<br>
+  if(i == 9)<br>
+  i = 8<br>
+  document.theImg.src = &quot;images/butterfly&quot; + i + &quot;.jpg&quot;<br>
+  }<br>
+  &lt;/script&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+  &lt;table align = center width = 400&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td colspan = 2 align = center height = 300&gt;&lt;img src = &quot;images/butterfly1.jpg&quot; name = theImg&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;&lt;img src = &quot;images/prev.jpg&quot; onclick = &quot;showPrev()&quot;&gt;&lt;/td&gt;<br>
+  &lt;td&gt;&lt;img src = &quot;images/next.jpg&quot; onclick = &quot;showNext()&quot; align = right&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+&lt;/table&gt;</p>
+<p>&lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+</p>
+</body>
+</html>

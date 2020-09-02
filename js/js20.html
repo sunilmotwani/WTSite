@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Digital Clock</title>
+
+</head>
+<body onload = "startTime()">
+
+<div id="theTime"></div>
+
+
+<p>
+  <script type = "text/javascript">
+function startTime(){
+var d
+d = new Date()
+h = d.getHours()
+m = d.getMinutes()
+s = d.getSeconds()
+document.getElementById("theTime").innerHTML =  h + ":" + m + ":" + s
+setInterval("showTime()",1000)
+}
+
+function showTime(){
+var d
+d = new Date()
+h = d.getHours()
+m = d.getMinutes()
+s = d.getSeconds()
+document.getElementById("theTime").innerHTML =  h + ":" + m + ":" + s
+}
+
+
+  </script>
+  <hr>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Digital Clock&lt;/title&gt;</p>
+<p>&lt;/head&gt;<br>
+  &lt;body onload = &quot;startTime()&quot;&gt;</p>
+<p>&lt;div id=&quot;theTime&quot;&gt;&lt;/div&gt;<br>
+</p>
+<p>&lt;script type = &quot;text/javascript&quot;&gt;<br>
+  function startTime(){<br>
+  var d<br>
+  d = new Date()<br>
+  h = d.getHours()<br>
+  m = d.getMinutes()<br>
+  s = d.getSeconds()<br>
+  document.getElementById(&quot;theTime&quot;).innerHTML =  h + &quot;:&quot; + m + &quot;:&quot; + s<br>
+  setInterval(&quot;showTime()&quot;,1000)<br>
+  }</p>
+<p>function showTime(){<br>
+  var d<br>
+  d = new Date()<br>
+  h = d.getHours()<br>
+  m = d.getMinutes()<br>
+  s = d.getSeconds()<br>
+  document.getElementById(&quot;theTime&quot;).innerHTML =  h + &quot;:&quot; + m + &quot;:&quot; + s<br>
+  }<br>
+</p>
+<p>&lt;/script&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+</p>
+</body>
+</html>

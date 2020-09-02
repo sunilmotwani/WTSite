@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Javascript arithmatic operators</title>
+<script type = "text/javascript">
+function result(){
+	var n1,n2,op
+	n1 = parseInt(document.dataform.num1.value)
+	n2 = parseInt(document.dataform.num2.value)
+	op = document.dataform.theOp.selectedIndex
+	
+	switch(op){
+	case 0:
+		//plus
+		document.dataform.theResult.value = n1 + n2
+		break
+	case 1:
+		//minus
+		document.dataform.theResult.value = n1 - n2
+		break	
+	case 2:
+		//multiply
+		document.dataform.theResult.value = n1 * n2
+		break
+
+	case 3:
+		//divide
+		document.dataform.theResult.value = n1 / n2
+		break
+
+	case 4:
+		//modulus
+		document.dataform.theResult.value = n1 % n2
+		break
+	}	
+}
+</script>
+</head>
+<body>
+<h2>Arithmetic operators</h2>
+<form name = dataform>
+<input type = text name = num1 size = 2>
+<select name = theOp>
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+
+</select>
+<input type = text name = num2 size = 2>
+<input type = button value = " = " onclick = "result()">
+<input type = text name = theResult>
+</form>
+<hr>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Javascript arithmatic operators&lt;/title&gt;<br>
+  &lt;script type = &quot;text/javascript&quot;&gt;<br>
+  function result(){<br>
+var n1,n2,op<br>
+n1 = parseInt(document.dataform.num1.value)<br>
+n2 = parseInt(document.dataform.num2.value)<br>
+op = document.dataform.theOp.selectedIndex<br>
+<br>
+switch(op){<br>
+case 0:<br>
+//plus<br>
+document.dataform.theResult.value = n1 + n2<br>
+break<br>
+case 1:<br>
+//minus<br>
+document.dataform.theResult.value = n1 - n2<br>
+break <br>
+case 2:<br>
+//multiply<br>
+document.dataform.theResult.value = n1 * n2<br>
+break</p>
+<p> case 3:<br>
+  //divide<br>
+  document.dataform.theResult.value = n1 / n2<br>
+  break</p>
+<p> case 4:<br>
+  //modulus<br>
+  document.dataform.theResult.value = n1 % n2<br>
+  break<br>
+  } <br>
+  }<br>
+  &lt;/script&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+  &lt;h2&gt;Arithmetic operators&lt;/h2&gt;<br>
+  &lt;form name = dataform&gt;<br>
+  &lt;input type = text name = num1 size = 2&gt;<br>
+  &lt;select name = theOp&gt;<br>
+  &lt;option&gt;+&lt;/option&gt;<br>
+  &lt;option&gt;-&lt;/option&gt;<br>
+  &lt;option&gt;*&lt;/option&gt;<br>
+  &lt;option&gt;/&lt;/option&gt;<br>
+  &lt;option&gt;%&lt;/option&gt;</p>
+<p>&lt;/select&gt;<br>
+  &lt;input type = text name = num2 size = 2&gt;<br>
+  &lt;input type = button value = &quot; = &quot; onclick = &quot;result()&quot;&gt;<br>
+  &lt;input type = text name = theResult&gt;<br>
+  &lt;/form&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;</p>
+</body>
+</html>

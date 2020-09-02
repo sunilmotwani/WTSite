@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>timer in JS</title>
+<script type = "text/javascript">
+var i
+i = 1
+function startCount(){
+setInterval("chImg()",5000)
+}
+function chImg(){
+++i
+if(i == 9)
+	i = 1
+document.theImg.src = "images/butterfly" + i + ".jpg"
+}
+</script>
+</head>
+<body onload = "startCount()">
+<p>This page will change image every 5 seconds <br>
+  <img src = "images/butterfly1.jpg" name = theImg>
+  
+</p>
+<hr>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;timer in JS&lt;/title&gt;<br>
+  &lt;script type = &quot;text/javascript&quot;&gt;<br>
+  var i<br>
+  i = 1<br>
+  function startCount(){<br>
+  setInterval(&quot;chImg()&quot;,5000)<br>
+  }<br>
+  function chImg(){<br>
+  ++i<br>
+  if(i == 9)<br>
+i = 1<br>
+document.theImg.src = &quot;images/butterfly&quot; + i + &quot;.jpg&quot;<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body onload = &quot;startCount()&quot;&gt;<br>
+This page will change image every 5 seconds<br>
+&lt;br&gt;<br>
+&lt;img src = &quot;images/butterfly1.jpg&quot; name = theImg&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</p>
+</body>
+</html>

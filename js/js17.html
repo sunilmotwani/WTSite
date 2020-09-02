@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Events</title>
+<script type = "text/javascript">
+function swapimg(n){
+if(n == 1)
+	document.bfly1.src = "images/butterfly3.jpg"
+else
+	document.bfly2.src = "images/butterfly4.jpg"
+}
+
+function swapback(n){
+if(n == 1)
+	document.bfly1.src = "images/butterfly1.jpg"
+else
+	document.bfly2.src = "images/butterfly2.jpg"
+}
+</script>
+</head>
+<body>
+<p>Hello there! <img src = "images/butterfly1.jpg" onmouseover = "swapimg(1)" name = bfly1 onmouseout = "swapback(1)">
+  <br>
+  <img src = "images/butterfly2.jpg" onmouseover = "swapimg(2)" name = bfly2 onmouseout = "swapback(2)">
+</p>
+<hr>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Events&lt;/title&gt;<br>
+  &lt;script type = &quot;text/javascript&quot;&gt;<br>
+  function swapimg(n){<br>
+  if(n == 1)<br>
+document.bfly1.src = &quot;images/butterfly3.jpg&quot;<br>
+else<br>
+document.bfly2.src = &quot;images/butterfly4.jpg&quot;<br>
+}</p>
+<p>function swapback(n){<br>
+  if(n == 1)<br>
+  document.bfly1.src = &quot;images/butterfly1.jpg&quot;<br>
+  else<br>
+  document.bfly2.src = &quot;images/butterfly2.jpg&quot;<br>
+  }<br>
+  &lt;/script&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+  Hello there!</p>
+<p>&lt;img src = &quot;images/butterfly1.jpg&quot; onmouseover = &quot;swapimg(1)&quot; name = bfly1 onmouseout = &quot;swapback(1)&quot;&gt;<br>
+  &lt;br&gt;<br>
+  &lt;img src = &quot;images/butterfly2.jpg&quot; onmouseover = &quot;swapimg(2)&quot; name = bfly2 onmouseout = &quot;swapback(2)&quot;&gt;<br>
+  &lt;/body&gt;</p>
+<p>&lt;/html&gt;<br>
+</p>
+</body>
+
+</html>
